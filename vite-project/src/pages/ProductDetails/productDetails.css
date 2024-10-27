@@ -1,0 +1,14 @@
+#pd-container{
+  box-shadow: 0 0 10px black;  
+  height: 500px;
+  display: flex;
+  margin: 30px;
+}
+#left-panel{
+padding: 30px;
+ width: 30%;
+}
+#right-panel{
+padding: 30px;
+width: 70%;
+}

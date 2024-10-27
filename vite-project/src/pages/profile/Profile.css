@@ -1,0 +1,52 @@
+#profileContainer{
+    width: 1000px;
+    height: 400px;
+    box-shadow: 0 0 10px black;
+    margin: 50px auto;
+    display: flex;
+}
+#leftPanel{
+    width:40%;
+   
+}
+#rightPanel{
+    width: 60%;
+ 
+}
+#leftPanel img{
+    width: 400px;
+    height: 400px;
+}
+dl{
+    margin-left: 20px;
+    text-align: justify;
+    margin-top: 20px;
+}
+.rightpanellight button{
+    margin: 10px ;
+    height: 30px;
+    width: 150px;
+}
+.rightpanellight input{
+ margin-left: 20px;
+ margin-right: 10px;
+}
+.rightpanellight{
+   background-color: white;
+   color: black;
+ 
+}
+.rightpanelDark{
+    background-color: black;
+    color: white;
+ 
+}
+.rightpanelDark button{
+    margin: 10px ;
+    height: 30px;
+    width: 150px;
+}
+.rightpanelDark input{
+ margin-left: 20px;
+ margin-right: 10px;
+}

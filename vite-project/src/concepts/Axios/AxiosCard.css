@@ -1,0 +1,22 @@
+#container{
+   display: flex; 
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 100px;
+gap: 20px;
+  
+}
+#card{
+    
+    width: 400px;
+    text-align: center;
+    border: 1px solid black;
+}
+.bgImage{
+    height: 500px;
+    padding: 50px;
+    background-size: 1000px;
+}
+button{
+    width: 150px;
+}
