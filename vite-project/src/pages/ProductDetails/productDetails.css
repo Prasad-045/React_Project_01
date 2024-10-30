@@ -1,8 +1,10 @@
 #pd-container{
+  width: 70%;
   box-shadow: 0 0 10px black;  
   height: 500px;
   display: flex;
   margin: 30px;
+
 }
 #left-panel{
 padding: 30px;
@@ -11,4 +13,11 @@ padding: 30px;
 #right-panel{
 padding: 30px;
 width: 70%;
+
+}
+#right-panel p{
+font-size: 30px;
+}
+#right-panel button{
+  margin-right: 20px;
 }

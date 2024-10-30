@@ -14,6 +14,8 @@ var logout = useContext(context)
             <Link to="jewellery">Jewellery</Link>
             <Link to="/men">Men</Link>
             <Link to="/women">Women</Link>
+            <Link to="/profile">Profile</Link>
+            <Link to="/cart">Cart</Link>
             <Link to="/logout"><button onClick={()=>{
                 logout(false)
             }}>

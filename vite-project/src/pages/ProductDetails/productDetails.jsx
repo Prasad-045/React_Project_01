@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import addProductincart from "./pdService";
 
 function ProductDetails(){
     //to store the products got from the server
@@ -36,7 +37,7 @@ return <div id="pd-container">
 <p>{state.price}</p>
 <p>{state.rating.rate}</p>
 <p>{state.category}</p>
-<button>Add to Cart</button>
+<button onClick={()=>{addProductincart(state)}}>Add to Cart</button>
 <button>Back to Cart</button>
 </div>
 </div>

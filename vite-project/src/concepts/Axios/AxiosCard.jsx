@@ -4,7 +4,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
+
 function AxiosCard({url,title,bgImage}){
+
   useEffect(()=>{
     display()
   })
@@ -19,7 +21,7 @@ var [state,setState] = useState([])
        setState(res.data)
         })
         .catch((err)=>{
-            console(err)
+            console.log("error")
         })
     }
     return <div>
@@ -30,7 +32,7 @@ var [state,setState] = useState([])
         <div id="container">
           {/*using map to access the provided data and create jsxml elements  */}
       {state.map((product)=>{
-        return <div id="card">
+        return <div id="card" key={product.id}>  {/* key is used as ui is repeated based on data in another component */}
             {/* <p>{product.id }<p/> it displays id of the product*/}
       <img width={300} height={500} src={product.image} alt="" />
       <h2>{product.title}</h2>
