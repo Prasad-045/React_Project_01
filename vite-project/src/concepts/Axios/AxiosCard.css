@@ -1,4 +1,4 @@
-#container{
+#card-container{
    display: flex; 
 flex-wrap: wrap;
 justify-content: center;
@@ -8,10 +8,11 @@ gap: 20px;
   
 }
 #card{
-    
+    height: 520px;
     width: 400px;
     text-align: center;
-    border: 1px solid black;
+   box-shadow: 0 0 10px black;
+    padding: 30px;
 }
 .bgImage{
     height: 500px;
@@ -20,4 +21,7 @@ gap: 20px;
 }
 button{
     width: 150px;
+}
+#card h2{
+    font-size: 20px;    
 }

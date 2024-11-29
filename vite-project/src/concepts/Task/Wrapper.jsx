@@ -1,10 +1,10 @@
 import Home from "./Home"
-import Login from "./Login"
-function Wrapper({loggedIn}){
+import Login from "./Login";
+function Wrapper({isLoggedIn}){
 
     return <div>
         {
-            loggedIn ? <Home/> : <Login/>
+            isLoggedIn ? <Home/> : <Login/>
         }
     </div>
 }

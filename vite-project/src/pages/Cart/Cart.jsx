@@ -75,7 +75,7 @@ function Cart() {
                       </button>
                     </td>
                   </tr>
-                );
+                ) ;
               })}
             </tbody>
           </table>

@@ -1,28 +1,27 @@
+import React from 'react'
 import "./Nav.css";
-import { useContext } from "react";
-import context from "./context";
-import { Link } from "react-router-dom";
-function Nav(){
-var logout = useContext(context)
-    return (<div id="Nav-container">
-        <div id="logo">
-            <h1>PRasad's</h1>
+
+import { Link } from 'react-router-dom';
+const Nav = ({setIsLoggedIn}) => {
+  
+  return (
+    <div id='nav-container'>
+        <div><h1 id='logo'>LOGO</h1></div>
+        <div >
+            <ul id='nav-items'>
+               <Link to={"/"}> <li>Home</li></Link>
+                <Link to={"/jewelery"}><li>Jewellery</li></Link>
+               <Link to={"/electronics"}> <li>Electronics</li></Link>
+                <Link to={"/men"}><li>Men</li></Link>
+                <Link to={"/women"}><li>Women</li></Link>
+                <Link to={"/profile"}><li>Profile</li></Link>
+                <Link to={"/cart"}><li>Cart</li>  </Link>  
+            </ul>
+           
         </div>
-        <div id="items">
-            <Link to="/">Home</Link>
-            <Link to="/electronics">Electronics</Link>
-            <Link to="jewellery">Jewellery</Link>
-            <Link to="/men">Men</Link>
-            <Link to="/women">Women</Link>
-            <Link to="/profile">Profile</Link>
-            <Link to="/cart">Cart</Link>
-            <Link to="/logout"><button onClick={()=>{
-                logout(false)
-            }}>
-                Logout
-            </button></Link>
-        </div>
-        
-    </div>)
+        <div> <button onClick={()=>{setIsLoggedIn(false)}}>Logout</button></div>
+    </div>
+  )
 }
+
 export default Nav;
